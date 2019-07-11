@@ -7,7 +7,14 @@ import {IWhereOptions} from "./IWhereOptions";
 /* tslint:disable:max-line-length */
 
 export interface IFindOptions<T> extends LoggingOptions, SearchPathOptions {
-
+  /**
+  * 
+  */
+  skipLocked:boolean;
+  /**
+  * 
+  */
+  transaction:Transaction;
   /**
    * A hash of attributes to describe your search. See above for examples.
    */
