@@ -1,10 +1,10 @@
 import 'reflect-metadata';
-import SequelizeOrigin = require('sequelize');
+import * as SequelizeOrigin from 'sequelize';
 import {Model} from "./Model";
 import {ModelMatch, SequelizeConfig} from '../types/SequelizeConfig';
 import {ISequelizeValidationOnlyConfig} from "../interfaces/ISequelizeValidationOnlyConfig";
 
-export declare class Sequelize extends SequelizeOrigin {
+export declare class Sequelize extends SequelizeOrigin.Sequelize {
 
   _: {[modelName: string]: (typeof Model)};
   connectionManager: any;
